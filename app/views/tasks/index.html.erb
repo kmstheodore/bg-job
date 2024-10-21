@@ -1,0 +1,13 @@
+<div id="hud">
+  <div id="incomplete-box">
+    <%@tasks.each do |task|%>
+      <%task_time = task.strike%>
+      <%task_time_formatted = task_time.strftime("%H:%M")%>
+      <div class="incomplete-card">
+        <h1><%=task_time_formatted%></h1>
+        <h2><%=task.title%></h2>
+        <p> <%=task.done%></p>
+      </div>
+    <%end%>
+  </div>
+<div>

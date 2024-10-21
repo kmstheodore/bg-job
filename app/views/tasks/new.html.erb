@@ -1,0 +1,20 @@
+<%= form_with model: @task do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :strike %><br>
+    <%= form.time_field :strike %>
+  </div>
+
+  <div>
+    <%= form.label :done %><br>
+    <%= form.text_area :done %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
